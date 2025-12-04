@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BroweserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
 // Layout
@@ -24,7 +24,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Sneaker.inc">
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
